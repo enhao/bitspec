@@ -6,7 +6,8 @@ env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    #   via the "travis encrypt" command using the project repo's public key
-   - secure: "JqbXwAAp-mMa6qjFI7XFvA" 
+   - secure: "bXsy61mTTpo1++iM/JqBAVMZrP92pdAs8pcBC9kbjIqGZqyflRjtyhznWA+8sqEg1avmzncVgQsh8NJfg63UXTJJPZP3ulESa2QLMUcFXKKabaQ52iXd2Dfi3Cv0pw0dLhSSfeo0Nx4MlavqVExAiCrxGuSaJ7d+Qk8UhSxT6YDOyjLKMRYGC1lypjQln36oTgHuTGmEThQ0cF42aZ3Tmit51fJhMTUujXsdkBZmBvY83avEvVcxL0Df7Py4OQIKe9mCvuebLjaQBhbUTHszApa7nJIr6hfnQxOTPpvEDxTQZgMlyHi58VwDYSi23egcg5CDliycum76HCN1mpz/qeev4uH+Vw9GKv/rg47rv+EeeLsRgnPVR/p0Mr1FEQwtS/k+XJTHYEJLSBukdu4bScO2uaMJvjwGfVbehbYbqJawI7nSGjV4yqS5tYjcb/0neK8mQqeMMdIqTy50pe3mEMLWv8bzyd6tG6W51AbwMcCKtuHCKuqObRkZo9M32KYTNV0lEgDkRqNTZBz/SG9G2iBZqiuOlXAwaOkOx2Q6Gokc2y5QIBzIEu4E53SoMdk1os6q8iR5N2tTxxrX29SfIE1JsJXoNub0BPQ4TCdwEh5b+55vqS8v5XQ58CqXBOYLVR/9syIXZBuMb/X4WOWw4Iakcssfbbu1RYPFmUWRpJM="
+
 
 compiler: gcc
 
