@@ -1,6 +1,7 @@
 # BitSpec
 
 [![Build Status](https://travis-ci.org/enhao/bitspec.svg?branch=master)](https://travis-ci.org/enhao/bitspec)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/10101/badge.svg)](https://scan.coverity.com/projects/enhao-bitspec)
 
 
 BitSpec is a devmem helper, support following functions by configuration:
