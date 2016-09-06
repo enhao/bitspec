@@ -2,10 +2,29 @@ language: c
 
 sudo: false
 
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "JqbXwAAp-mMa6qjFI7XFvA" 
+
 compiler: gcc
 
 script: make
 
+before_install:
+    - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+
 notifications:
   email:
     - enhao.mobile@gmail.com
+
+addons:
+  coverity_scan:
+    project:
+      name: "enhao/bitspec"
+      description: "BitSpec is a devmem helper to enhance the readability of the output "
+    notification_email: enhao.mobile@gmail.com
+    build_command_prepend: "make clean"
+    build_command:   "make"
+    branch_pattern: coverity_scan
